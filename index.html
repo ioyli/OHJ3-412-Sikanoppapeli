@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>#412 Sikanoppapeli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="js/sikanoppa.js"></script>
+    <h1>SIKANOPPA</h1>
+    <div id="setup">
+        Noppien määrä:
+        <br>
+        <input type="radio" id="yksiNoppa" name="noppaMaara" value="1" checked="checked">
+        <label for="yksiNoppa">1 noppa</label>
+        <br>
+        <input type="radio" id="kaksiNoppaa" name="noppaMaara" value="2">
+        <label for="kaksiNoppaa">2 noppaa</label>
+
+        <br>
+
+        <label for="maxPisteet">Maksimi pistemäärä:</label>
+        <input type="number" id="maxPisteet" name="maxPisteet">
+
+        <br>
+
+        <label for="pelaajaMaara">Pelaajien määrä:</label>
+        <input type="number" id="pelaajaMaara" name="pelaajaMaara">
+
+        <br>
+
+        <button onclick="setup()">OK</button>
+
+        <div id="pelaajienNimet"></div>
+
+        <button id="valmis" onclick="finalize()">Valmis!</button>
+    </div>
+
+    <div id="game">
+        <p>Vuoro: <span id="vuoro"></span></p>
+        <p>Vuoron pisteet: <span id="vuoroPisteet"></span></p>
+        <p>Kaikki pisteet: <span id="pelaajanPisteet"></span></p>
+
+        <div id="huom"></div>
+
+        <button onclick="heita()">Heitä!</button>
+        <button onclick="lopetaVuoro()">Lopeta vuoro</button>
+    </div>
+</body>
+
+</html>
