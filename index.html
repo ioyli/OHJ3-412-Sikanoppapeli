@@ -40,14 +40,20 @@
     </div>
 
     <div id="game">
-        <p>Vuoro: <span id="vuoro"></span></p>
-        <p>Vuoron pisteet: <span id="vuoroPisteet"></span></p>
-        <p>Kaikki pisteet: <span id="pelaajanPisteet"></span></p>
+        <div id="pistetilanneContain"><b>PISTETILANNE</b>
+            <div id="pistetilanne"></div>
+        </div>
+        <div id="gameInner">
+            <p>Vuoro: <span id="vuoro"></span></p>
+            <p>Vuoron pisteet: <span id="vuoroPisteet"></span></p>
+            <p>Kaikki pisteet: <span id="pelaajanPisteet"></span></p>
 
-        <div id="huom"></div>
+            <div id="huom"></div>
+            <div id="nopat"><span id="noppaA"></span> <span id="noppaB"></span></div>
 
-        <button onclick="heita()">Heitä!</button>
-        <button onclick="lopetaVuoro()">Lopeta vuoro</button>
+            <button onclick="heita()">Heitä!</button>
+            <button onclick="lopetaVuoro()">Lopeta vuoro</button>
+        </div>
     </div>
 </body>
 

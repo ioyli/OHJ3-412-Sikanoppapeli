@@ -30,3 +30,11 @@ button {
 #game {
     display: none;
 }
+
+#pistetilanneContain {
+    float: right;
+}
+
+#nopat img {
+    max-width: 60px;
+}
